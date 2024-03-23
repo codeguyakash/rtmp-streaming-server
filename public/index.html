@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/11620/11620179.png"
+      type="image/x-icon"
+    />
+    <title>RTMP-Server</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+        background: #141414;
+        padding: 10px;
+      }
+      div {
+        margin: 50px auto;
+        width: 500px;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+      video {
+        border-radius: 10px;
+        border: 2px solid #c4c4c4;
+      }
+      h1 {
+        color: #c4c4c4;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      button {
+        border-radius: 10px;
+        border: 2px solid #c4c4c4;
+        font-size: 34px;
+        padding: 10px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RTMP Video Streaming Server</h1>
+    <br />
+    <div>
+      <video id="video" autoplay muted></video>
+
+      <button id="start-button">Start</button>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
