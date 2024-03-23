@@ -1,9 +1,10 @@
+version: "3.8"
 services:
   app:
     build:
-      context:
-      dockerfile: ./Dockerfile
+      context: .
+      dockerfile: "./Dockerfile"
     volumes:
-      - ./:/home/app
+      - "./:/home/app"
     ports:
-      - 8000:8000
+      - "8000:8000"
